@@ -27,7 +27,7 @@ $database = new Medoo([
 ]);
 // global variables
 $base_url = "http://localhost/smajlikovna";
-$APP_ENV= "local";
+$APP_ENV = "local";
 
 if($APP_ENV == "public")
 {
