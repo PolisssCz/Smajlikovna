@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(0.25turn, #3f87a6, #e0ffff, #398f8f, #ffd125);
+    text-align: center;
+    font-size: 200%;
+}
+.logo {
+    border-top: solid 10px #f70000 ;
+    border-bottom: solid 10px #f70000 ;
+    height: 210px;
+    background: url(../img/logo.png) no-repeat scroll center -263px;
+        background-color: rgba(0, 0, 0, 0);
+    background-color: #a7fff9;
+}
+strong{
+    color: red;
+}
+
+@media (max-width: 1600px) {
+    .logo {
+        background: url(../img/logo.png) no-repeat scroll center;
+        background-size: 100%;
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .logo {
+        background: url(../img/logo.png) no-repeat scroll center;
+        background-size: 170%;
+    }
+}
+@media (max-width: 300px) {
+    .logo {
+        background: url(../img/logo.png) no-repeat scroll center;
+        height: 218px;
+        width: auto;
+        background-size: 173%;
+    }
+}

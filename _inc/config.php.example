@@ -1,0 +1,46 @@
+<!-- 
+    ********************************
+    rename this file to "config.php" 
+    ********************************
+-->
+<?php
+/*
+    // show all errors
+    ini_set('display_startup_errors', 'On');
+    ini_set('display_errors', 'On');
+    error_reporting(-1);
+*/
+
+// Require Composer's autoloader.
+require 'vendor/autoload.php';
+
+// connect to database
+use Medoo\Medoo;
+
+$database = new Medoo([
+    'database_type' => 'mysql',
+    'database_name' => 'smajl',
+    'server' => '',
+    'username' => '',
+    'password' => '',
+    'charset'  => 'utf8'
+]);
+// global variables
+$base_url = "http://localhost/smajlikovna";
+$APP_ENV= "local";
+
+if($APP_ENV == "public")
+{
+    $user_ip = $_SERVER['CLIENTIP'];
+}
+else if ($APP_ENV == "local")
+{
+    $user_ip = $_SERVER['SERVER_ADDR'];
+}
+
+//the number of items in the cart for the current IP
+$count_cart = $database->count("cart", [
+    "user_ip" => "$user_ip"
+]);
+//FUNCTIONS
+require_once 'functions.php';

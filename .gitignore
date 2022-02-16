@@ -1,0 +1,5 @@
+/_inc/vendor
+/_inc/bower_components
+/_inc/config.php
+/.idea
+/.vscode
