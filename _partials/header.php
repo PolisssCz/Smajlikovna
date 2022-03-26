@@ -66,11 +66,11 @@
                 //create a list of all files
                 foreach( $file as $key => $pages ){
                     //delete unwanted files
-                    if ($pages == 'cart.php') continue;
+                    if ($pages == 'cart.php') continue;   
                     //rename
                     $page = basename($pages, '.php');
                     
-                    /* if ($page == 'index') $page = 'All'; */
+                    if ($page == 'index') $page = '';
 
                     //keep the file name and save the changes
                     $rename[] = "$page/$pages";  
