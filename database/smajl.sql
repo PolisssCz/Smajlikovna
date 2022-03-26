@@ -63,11 +63,11 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`id`, `product_img`, `product_title`, `product_info`, `product_price`, `product_priceD`, `time_count`, `product_class`) VALUES
 (1, 'assets\\img\\HappyFace.png', 'Grinning Face with Big Eyes', 'A yellow face with smiling eyes and a broad, open smile, showing upper teeth and tongue on some platforms. Often conveys general happiness and good-natured amusement. Similar to Grinning Face but with taller, more excited eyes.', 57, '50', '2021-07-10 21:38:54.000000', 'cheerful'),
-(7, 'assets\\img\\faceVomiting.png', 'Face Vomiting', 'A yellow face with scrunched, X-shaped eyes spewing bright-green vomit. May represent physical illness or disgust, more intensely so than Nauseated Face. ', 2000, NULL, '2021-07-11 21:31:57.000000', 'sad'),
-(10, 'assets\\img\\MoneyFace.png', 'Dollar Sign Eyes', 'A yellow face with raised eyebrows, dollar signs for eyes, and an open smile sticking out a tongue styled after a green, dollar banknote. Some platforms depict the dollar-sign eyes in green circles.', 10000, NULL, '2021-07-11 21:31:57.000000', 'wealthy'),
-(11, 'assets\\img\\ColdFace.png', 'Cold Face', 'An icy-blue face with gritted teeth usually depicted with icicles clinging to its cheeks or jaw, as if frozen from extreme cold. May also represent unfriendliness (slang, cold) or excellence (slang, cool or chill).', 135, NULL, '2021-07-12 09:35:39.000000', 'sad'),
-(12, 'assets\\img\\FaceMonocle.png', 'Face with Monocle', 'A yellow face with furrowed eyebrows wearing a monocle. Usually depicted with a small, intent frown and head slightly upturned, as if in careful inspection.', 455, NULL, '2021-07-12 09:35:39.000000', 'smart'),
-(13, 'assets\\img\\smilingFaceWithHeartEes.png', 'Smiling Face with Heart-Eyes', 'A yellow face with an open smile, sometimes showing teeth, and red, cartoon-styled hearts for eyes. Often conveys enthusiastic feelings of love, infatuation, and adoration, e.g., I love/am in love with this person or thing.', 300000, NULL, '2021-07-12 09:35:39.000000', 'love');
+(2, 'assets\\img\\faceVomiting.png', 'Face Vomiting', 'A yellow face with scrunched, X-shaped eyes spewing bright-green vomit. May represent physical illness or disgust, more intensely so than Nauseated Face. ', 2000, NULL, '2021-07-11 21:31:57.000000', 'sad'),
+(3, 'assets\\img\\MoneyFace.png', 'Dollar Sign Eyes', 'A yellow face with raised eyebrows, dollar signs for eyes, and an open smile sticking out a tongue styled after a green, dollar banknote. Some platforms depict the dollar-sign eyes in green circles.', 10000, NULL, '2021-07-11 21:31:57.000000', 'wealthy'),
+(4, 'assets\\img\\ColdFace.png', 'Cold Face', 'An icy-blue face with gritted teeth usually depicted with icicles clinging to its cheeks or jaw, as if frozen from extreme cold. May also represent unfriendliness (slang, cold) or excellence (slang, cool or chill).', 135, NULL, '2021-07-12 09:35:39.000000', 'sad'),
+(5, 'assets\\img\\FaceMonocle.png', 'Face with Monocle', 'A yellow face with furrowed eyebrows wearing a monocle. Usually depicted with a small, intent frown and head slightly upturned, as if in careful inspection.', 455, NULL, '2021-07-12 09:35:39.000000', 'smart'),
+(6, 'assets\\img\\smilingFaceWithHeartEes.png', 'Smiling Face with Heart-Eyes', 'A yellow face with an open smile, sometimes showing teeth, and red, cartoon-styled hearts for eyes. Often conveys enthusiastic feelings of love, infatuation, and adoration, e.g., I love/am in love with this person or thing.', 300000, NULL, '2021-07-12 09:35:39.000000', 'love');
 
 --
 -- Indexes for dumped tables
@@ -93,13 +93,13 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `cart_id` int(150) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `cart_id` int(150) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(150) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(150) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
