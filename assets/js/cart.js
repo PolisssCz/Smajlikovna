@@ -44,7 +44,7 @@ form.on("click", function (event)
   });
   req.done(function(data){
     if (data > -1) {
-      $('#id-'+data+'').hide( 550, function()
+      $('#id-'+data.trim()+'').hide( 550, function()
       {
         $(this).remove();
         updateBill();
