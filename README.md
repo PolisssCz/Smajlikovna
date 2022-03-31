@@ -1,4 +1,4 @@
-# Smajlikovna
+# Smajlikovna _OOP_
 ### For the proper functioning of the Smajlikovna
 1) Run: **composer update.**
 2) **Create a new database**.
