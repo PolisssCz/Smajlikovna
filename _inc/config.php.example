@@ -7,7 +7,7 @@
 */
 
 // Require Composer's autoloader.
-require 'vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 // connect to database
 use Medoo\Medoo;
