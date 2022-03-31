@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<?php require_once '_inc/config.php' ?>
+<?php 
+    require_once '_inc/config.php';
+    require 'vendor/autoload.php';
+?>
 <html lang="en">
 <head>
     <?php $page_name = basename($_SERVER['SCRIPT_NAME'], '.php');

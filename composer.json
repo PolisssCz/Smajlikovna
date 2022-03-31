@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+           "Product\\": "src"
+        }    
+    },
+    "require": {
+        "catfan/medoo": "^2.1"
+    }
+}
