@@ -3,9 +3,7 @@ if ( $(location).attr('href') === "https://smajlikovna.php5.cz/" ) {
     window.location.replace("https://smajlikovna.php5.cz/all.php");
 };
 
-//correct display of shopping buttons
-    $('.button').hide();
-    $('.packed').show();
+
 // creation of variables
 var form = $('.box form'),
     count_icon = $('.scope'),
@@ -21,7 +19,7 @@ $('.packed').on('click', function (){
     var li = $('#add-cart-'+id);
     $(this).hide();
     li.fadeIn()
-        .css({'scale': '1'})
+        .css({'scale': '1', 'display': 'flex'})
         .addClass('active');
     var quantity = $('.active .Qvalue').val();
     if (quantity == 0 || NaN) {
@@ -139,4 +137,17 @@ $('.menu li a').on('click', function () {
     $('.select').removeClass('select');
     $(this).addClass('select');
 });
+
+// Ajax
+$('.menu li a').on('click', function (event) {
+    event.preventDefault();
+    var href = $(this).attr('href');
+    var classs = $(this).text().toLowerCase();
+    
+    if (classs == 'all') {
+        $('.products').load(href + ' .box');
+    }else{
+        $('.products').load(href + ' .' + classs);
+    }
+})
 })(jQuery, window, document, undefined);

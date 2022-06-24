@@ -412,6 +412,8 @@ article {
     background: #ddfbfb;;
     border-left: solid 2.5px #30fff1a1;
     border-right: solid 2.5px #30fff1a1;
+
+    min-height: 100vh;
 }
 .select{
     border-left: 5px solid transparent;
@@ -497,7 +499,7 @@ article {
     transition: all 0.3s ease-in;
 }
 .button {
-    display: flex;
+    display: none;
 
     align-items: center;
     justify-content: center;
